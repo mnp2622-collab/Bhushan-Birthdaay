@@ -8,33 +8,28 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#0B0B0B',
-        card: '#121214',
-        'card-hover': '#1A1A1E',
-        surface: '#18181C',
+        background: '#111111',
+        card: '#161616',
+        'card-hover': '#1F1F1F',
+        surface: '#1C1C1C',
         'surface-border': 'rgba(255, 255, 255, 0.08)',
-        neon: {
-          DEFAULT: '#8DFF2F',
-          hover: '#7CE822',
-          glow: 'rgba(141, 255, 47, 0.35)',
-          muted: 'rgba(141, 255, 47, 0.12)',
-        },
-        slate: {
-          850: '#151C2C',
-          900: '#0F172A',
-          950: '#0B0F19',
+        'light-gray': '#F5F5F5',
+        primary: {
+          DEFAULT: '#E50914',
+          hover: '#C10712',
+          glow: 'rgba(229, 9, 20, 0.35)',
+          muted: 'rgba(229, 9, 20, 0.12)',
         }
       },
       fontFamily: {
-        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+        heading: ['Poppins', 'sans-serif'],
+        body: ['Roboto', 'sans-serif'],
+        sans: ['Roboto', 'sans-serif'],
       },
       boxShadow: {
-        'neon-glow': '0 0 25px -5px rgba(141, 255, 47, 0.3)',
-        'neon-sm': '0 0 12px -2px rgba(141, 255, 47, 0.25)',
-        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
-      },
-      backdropBlur: {
-        xs: '2px',
+        'red-glow': '0 0 25px -5px rgba(229, 9, 20, 0.4)',
+        'red-sm': '0 0 12px -2px rgba(229, 9, 20, 0.3)',
+        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.5)',
       },
       borderRadius: {
         '2xl': '18px',

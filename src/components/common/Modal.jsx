@@ -27,7 +27,7 @@ export const Modal = ({ isOpen, onClose, title, children, maxWidth = 'max-w-2xl'
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 bg-black/80 backdrop-blur-md"
+            className="fixed inset-0 bg-black/85 backdrop-blur-md"
           />
 
           {/* Modal Content */}
@@ -36,12 +36,12 @@ export const Modal = ({ isOpen, onClose, title, children, maxWidth = 'max-w-2xl'
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-            className={`relative w-full ${maxWidth} glass-card bg-[#121216]/95 rounded-2xl border border-white/10 shadow-2xl overflow-hidden z-10 my-8`}
+            className={`relative w-full ${maxWidth} glass-card bg-[#161616]/95 rounded-2xl border border-white/10 shadow-2xl overflow-hidden z-10 my-8 font-body`}
           >
             {/* Modal Header */}
             <div className="flex items-center justify-between px-6 py-5 border-b border-white/10 bg-white/[0.02]">
-              <h3 className="text-xl font-bold text-white tracking-wide flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-[#8DFF2F] shadow-[0_0_10px_#8DFF2F]" />
+              <h3 className="text-xl font-bold font-heading text-white tracking-wide flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#E50914] shadow-[0_0_10px_#E50914]" />
                 {title}
               </h3>
               <button
